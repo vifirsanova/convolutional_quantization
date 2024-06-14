@@ -1,0 +1,52 @@
+
+
+MODEL TRAINING:
+Epoch 1/5, Train Loss: 0.5799, Val Loss: 0.4529, Val Accuracy: 0.8350
+Epoch 2/5, Train Loss: 0.3189, Val Loss: 0.2459, Val Accuracy: 0.9250
+Epoch 3/5, Train Loss: 0.2335, Val Loss: 0.2474, Val Accuracy: 0.8750
+Epoch 4/5, Train Loss: 0.1617, Val Loss: 0.1780, Val Accuracy: 0.9200
+Epoch 5/5, Train Loss: 0.1225, Val Loss: 0.1788, Val Accuracy: 0.8950
+MODEL TRAINING COMPLETE!
+
+MODEL WEIGHTS & BIASES SUMMARY:
+fc1.weight 	 torch.Size([512, 10])
+fc1.bias 	 torch.Size([512])
+fc2.weight 	 torch.Size([512, 512])
+fc2.bias 	 torch.Size([512])
+fc3.weight 	 torch.Size([1, 512])
+fc3.bias 	 torch.Size([1])
+
+LAYER REDUCTION SUMMARY:
+rank 		 4
+U matrix 	 torch.Size([512, 4])
+S matrix 	 torch.Size([4])
+V matrix 	 torch.Size([512, 4])
+
+LAYER CONVOLUTION SUMMARY:
+kernel size	 3
+U matrix 	 torch.Size([512, 4])
+S matrix 	 torch.Size([4])
+V matrix 	 torch.Size([512, 4])
+
+COMPRESSION SUMMARY:
+Reduced weight 			 torch.Size([512, 512])
+Compressed (convolved) weight 	 torch.Size([512, 512])
+
+UPDATED MATRIX SUMMARY:
+Updated weights:	 torch.Size([4, 512]) 	 matrix name: u_conv
+Frozen weights:		 torch.Size([508, 512]) 
+
+MODEL TRAINING:
+Epoch 1/2, Train Loss: 0.1176, Val Loss: 0.1665, Val Accuracy: 0.9200
+Epoch 2/2, Train Loss: 0.0945, Val Loss: 0.1592, Val Accuracy: 0.9100
+MODEL TRAINING COMPLETE!
+
+UPDATED MATRIX SUMMARY:
+Updated weights:	 torch.Size([4, 512]) 	 matrix name: v_conv
+Frozen weights:		 torch.Size([508, 512]) 
+
+MODEL TRAINING:
+Epoch 1/2, Train Loss: 0.1806, Val Loss: 0.2150, Val Accuracy: 0.8950
+Epoch 2/2, Train Loss: 0.1089, Val Loss: 0.1786, Val Accuracy: 0.9300
+MODEL TRAINING COMPLETE!
+
